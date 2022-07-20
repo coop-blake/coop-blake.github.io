@@ -1,2 +1,2 @@
 # coop-blake.github.io
-Pages Repository
+[Pages Repository](https://coop-blake.github.io/)
