@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coop-Blake Demo Modules</title>
+    <title>🛠 Coop-Blake's Demo Tools 🛠</title>
 </head>
 <body>
 <style>
     .ProjectInfoDiv{
-        border: solid black 1px;
+        border: none;
         padding: 5px;
     }
 
     a {
         text-decoration: none;
         font-weight: bold;
+        color: black;
+    }
+
+    a:link {
+        color: #076707;
+    }
+
+
+    a:visited {
+        color: #076707;
+    }
+
+
+    a:hover {
+        color: #f33f99;
+    }
+
+    /* selected link */
+    a:active {
+        color: #f33f99;
     }
 </style>
-<header><h1>Coop-Blake's Demo Modules</h1></header>
+<header><h1>🛠 Coop-Blake's Demo Tools 🛠</h1></header>
 <div id="main" >
     <div class="ProjectInfoDiv">
+        <h3>🔧 UNFI Tools</h3>
         <a href="UNFIPricer">UNFI Pricer</a>  <br/>
         Lookup UNFI pricing by item id after dropping UNFI provided price book file.<br/><br/>
         <a href="UNFIPricerWithInventory">UNFI Pricer with Inventory</a>  <br/>
@@ -27,7 +48,10 @@
         <a href="UNFIPackChange">UNFI Pack Change with Inventory</a>  <br/>
         View UNFI pack changes and compare to inventory.
     </div>
-     <div class="ProjectInfoDiv">
+    <br/>
+    <hr/>
+     <div class="ProjectInfoDiv" >
+         <h3>🔨 Data Tools</h3>
          <a href="tabImporter">Tab Importer</a> <br/>
          Get a comma seperated list from a column in a tab or comma seperated file <br/> <br/>
          <a href="tabImporterDev">Tab Importer Under Development</a> <br/>
