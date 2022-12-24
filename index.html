@@ -13,8 +13,12 @@
         max-width: 600px;
     }
 
+    .MainInfo{
+        max-width: 600px;
+    }
+
     #ExperimentalTools{
-        background-color: rgba(220, 122, 24, 0.87);
+        background-color: rgba(220, 122, 24, 0.34);
         margin: 0px;
         padding: 0;
         padding-bottom: 10px;
@@ -48,6 +52,7 @@
         border: solid black 2px;
         background-color: rgba(220, 122, 24, 0.87);
         margin: 10px;
+        font-style: italic;
     }
     .Note{
         font-size: 12pt;
@@ -59,6 +64,7 @@
         margin: 10px;
         max-width: 600px;
         padding-left: 20px;
+        font-style: italic;
 
     }
 
@@ -92,8 +98,20 @@
     a:active {
         color: #280956;
     }
+
+    html {
+        scroll-behavior: smooth;
+    }
 </style>
 <header><h1>🛠 Coop-Blake's Tools 🛠</h1></header>
+<p class="MainInfo">Live demo collection of tools under development, built using an Open Source Full Stack Javascript Framework.
+    <br/><br/>
+In the <a href="#ExperimentalTools">Experimental Section</a> there is more information and a link to the <a href="https://github.com/coop-blake/Coopilot" target="_blank">Coopilot Repository</a> which contains the code for these examples.
+    <br/><br/>
+Listed by assumed descending usefulness.
+    <br/>
+
+</p>
 <hr style="margin: 0; color: black; border: 1px solid black; height: 0; box-shadow: 0 0 10px 1px black;">
 
 <div id="main" >
@@ -101,65 +119,118 @@
     <div class="ProjectInfoDiv" >
 
         <h3 class="ToolTypeHeader" >🔨 Data Tool</h3>
-        <a href="tabImporter" class="ToolLink">Tab Importer</a>            <br/>
+        <a href="tabImporter" class="ToolLink" target="_blank">Tab Importer</a>            <br/>
 
-        <a href="tabImporter" ><img src="resources/tabImporterUnloaded.jpg"  style=" float: right;"></a>
-        <p class="ToolSummary">Get a comma seperated list from a column in a tab or comma seperated file</p>
+        <a href="tabImporter" target="_blank" ><img src="resources/tabImporterUnloaded.jpg"  style=" float: right;" target="_blank"></a>
+        <p class="ToolSummary">Trims and assembles a comma seperated list of column data from a tab or comma delimited file</p>
 
-        <p class="ToolDescription"> Primarily used for getting a list of itemIDs from an exported catapult Worksheet. Though it could have other uses and has been working reliably for me for some time. Being developed for extended usage, including large file support.</p>
-        <span class="Note"> 📝 Not recommended for files with more than a thousand lines - maybe two or three, you can get away with 10 or more if you don't mind the unresponsiveness.</span>
-        <p style="font-weight: bold; padding-left: 15px">Try it <br/>
+        <p class="ToolDescription"> Primarily used in the wild for getting a list of identifiers from exported worksheets which can then be used for search and filtering. <br/><br/> Currently <a href="#ExperimentalTools">being developed</a> for additional capabilities including larger file support.</p>
+        <span class="Note"> 💁 Not recommended for files with more than about a thousand lines, maybe two or three. You can get away with more if you don't mind the unresponsiveness.  </span>
+        <p style="font-weight: bold; padding-left: 15px; font-size: 14pt;">Try it <br/>
         <ul>
-            <li> Drop Text File</li>
-            <li>Toggle Comma/Tab Button to choose data separator</li>
+            <li>Open link </li>
+            <li>Drop text file</li>
+            <li>Toggle Comma/Tab button to choose data separator</li>
             <li>Toggle AutoTrim to attempt removing header and footer rows</li>
             <li>Adjust header and footer length with triangle buttons, reset with AutoTrim</li>
-            <li>Double Click Column Header to produce comma seperated list in lower pane</li>
-            <li>Triple Click comma seperated list to select</li>
-            <li>Copy to clipboard</li>
+            <li>Double Click column header number to produce comma seperated list in lower pane</li>
         </ul>
 
         </p>
-
-        <img src="resources/tabImporterLoaded.jpg" />
+        <img src="resources/tabImporterLoaded.jpg" alt="tabImporter Screenshot" />
     </div>
 
 
     <br/>
-    <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
+    <hr style="margin: 0; color: black; border: 1px solid black; height: 0; box-shadow: 0 0 10px 1px black;">
     <div class="ProjectInfoDiv">
         <h3 class="ToolTypeHeader">🔧 UNFI Tools</h3>
-        <a href="UNFIPricer" class="ToolLink">UNFI Pricer</a>
-        <p class="ToolDescription"> Lookup UNFI pricing by item id after dropping UNFI provided price book file.</p>
-        <br/>
-        <a href="UNFIPricerWithInventory" class="ToolLink">UNFI Pricer with Inventory</a>
-        <p class="ToolDescription"> Lookup UNFI pricing by item id and compare to inventory.</p>
+        <a href="UNFIPricer" class="ToolLink" target="_blank">UNFI Pricer</a>
+        <a href="UNFIPricer" target="_blank"><img src="resources/UNFIthumb.jpg"  style=" float: right;"></a>
+        <p class="ToolSummary">Lookup item pricing in pricebook file provided by UNFI.</p>
 
-<br/>
-        <a href="UNFIPackChange" class="ToolLink">UNFI Pack Change with Inventory</a>
-        <p class="ToolDescription"> View UNFI pack changes and compare to inventory.</p>
+        <p class="ToolDescription">Drop UFNI pricebook text file. Then input item ID in the input field and press enter to lookup pricing
+        <br/><br/><br/><br/>
+            <a href="resources/UNFI.jpg" target="_blank">Enlarge Screenshot </a> </p>
+        <br/><br/>
+<hr/>
+        <br/><br/>
+        <a href="UNFIPricerWithInventory" class="ToolLink" target="_blank">UNFI Pricer with Inventory</a>
+        <a href="UNFIPricerWithInventory" target="_blank" ><img src="resources/UNFIInvThumb.jpg"  style=" padding-left: 20px; float: right;"></a>
+        <p class="ToolSummary">Item Lookup for comparing pricebook and inventory data.</p>
+        <p class="ToolDescription">
+        <span class="Note" style="margin-right: 25px; margin: 5px; display: flex"> 💁 Requires UNFI pricebook and custom inventory tab delimited files to demo.</span>
+        </p>
+        <br/>
+         <div style="padding: 15px; display: inline-block; align-content: center; text-align: center">   <a href="resources/UNFIInv.jpg" target="_blank"  >Enlarge Screenshot </a> </div>
+
+
+<br/>  <br/>
+        <hr/>
+        <br/><br/>
+        <a href="UNFIPackChange" class="ToolLink" target="_blank">UNFI Pack Change with Inventory</a>
+        <a href="UNFIPackChange" target="_blank"><img src="resources/packChangeThumb.jpg"  style=" padding-left: 20px; float: right;"></a>
+        <p class="ToolSummary">View upcoming UNFI pack changes and compare to inventory.</p>
+        <p class="ToolDescription">
+            <span class="Note" style="display: flex"> 💁 Requires UNFI packchange and custom inventory tab delimited files to demo.
+            </span>
+        </p>
+        <br/>
+
+        <a href="resources/packChange.jpg" target="_blank" style="padding: 15px; display: inline-block">Enlarge Screenshot </a>
+
     </div>
     <br/>
-    <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
+    <hr style="margin: 0; color: black; border: 1px solid black; height: 0; box-shadow: 0 0 10px 1px black;">
 
     <h3 class="ToolTypeHeader" >🧪 Experimental </h3>
-    <div class="ProjectInfoDiv"  style="padding-top:0;maring-top: 0;">
+    <div class="ProjectInfoDiv"  style="padding-top:0;maring-top: 0; max-width: 800px;">
         <div id="ExperimentalTools">
             <p id="ExperimentalToolsHeader"> &nbsp 👀 <span style="font-size: 12pt; float: right; margin: 5px;">   ⚠️   Use without expectation   ⚠️   </span> </p>
             <br/>
-            <a href="tabImporterDev" class="ToolLink">Tab Importer For Large Files</a>
-            <p class="ToolDescription">Like the above <a href="tabImporter" >Tab Importer</a> but should be able to handle very large files without making browser window unresponsive </p>
-            <span class="CautionNote">  👀 Can be quirky but working </span>
+            <a href="tabImporterDev" class="ToolLink">Tab Importer For Larger Files</a>
+            <a href="tabImporterDev" ><img src="resources/tabDevThumb.png"  style=" float: right;"></a>
+            <p class="ToolSummary">Like the above <a href="tabImporter" >Tab Importer</a> but should be able to handle very large files without making browser window unresponsive </p>
+            <span class="CautionNote">  👀 Can be quirky but works </span>
+            <br/>
+            <p class="ToolDescription">As development progresses, this will be used to import data objects that can be utilized by custom modules in the framework</p>
             <br/>
             <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
             <br/>
+            <br/>
 
             <a href="https://github.com/coop-blake/Coopilot" class="ToolLink">Coopilot</a>
+            <a href="https://github.com/coop-blake/Coopilot" ><img src="resources/coopilotThumb.png"  style=" float: right;"></a>
             <p class="ToolSummary">Web application workspace that can be installed locally or in the cloud</p>
-            <p class="ToolDescription">Contains the above tools and more in a remotely accessible password protected workspace.
-                The Workspace and the full stack javascript framework used to build it are still in an experimental development phase.
-                As such they are subject to many changes before community deployment is recommended. <br/> <br/> Currently, <a href="https://github.com/coop-blake/Coopilot">Coopilot</a> is being used to build the above standalone front ends. I also run a build on a cloud compute instance that is used regularly to interface with an iOS application under development</p>
-            <span class="CautionNote"> 👀 Not currently worth installing for use - only additional functionality compared to above tools is an interface for a proprietary iOS application. Documentation may lead you to a working web app if you are curious  ️</span>
+
+            <p class="ToolDescription">Contains the above tools together in a remotely accessible password protected workspace.
+                The Workspace and the full stack javascript framework used to build it are in an experimental development phase.
+                As such they are subject to many changes before community deployment is recommended. <br/> <br/> Currently, <a href="https://github.com/coop-blake/Coopilot">Coopilot</a> is being used to build the above standalone front ends. It is also utilized in a cloud compute instance to interface with an iOS application being developed.</p>
+
+            <span class="CautionNote"> 👀 Not currently worth installing for use - only additional functionality compared to above tools is an interface for unavailable iOS application. Documentation may lead you to a working web app if you are curious.  ️</span>
+
+            <a href="resources/coopilotScanFull.jpg"  target="_blank"style="float: left; padding: 20px; "><img src="resources/coopilotScanThumb.png" style=" width: 200px;"/></a>
+
+            <a href="resources/coopilotNoteFull.jpg" target="_blank" style=" padding: 20px;float: right; "><img src="resources/coopilotNoteThumb.png"  style=" width: 200px;"/></a>
+            <p style="font-weight: bold"> Click these images to see full resolution screenshots</p>
+
+            <p style=""> <-- Image on the left shows iOS app capturing a shelf tag through a closed glass door.</p>
+            <br/><br/><br/>
+            <p style="float: bottom"> Image on the right shows captured barcode and image text, along with a note to check update --></p>
+<br/><br/>
+            <p style="float: bottom"> Image below shows the web interface with the above tools and scan data together in remote workspace ↓</p>
+            <div style="text-align: center;"> <a href="resources/coopilotFull.jpg" target="_blank" ><img src="resources/coopilotMid.png" /></a>
+
+            <span class="Note" style="text-align: left" >💁 The Full Stack Javascript Framework used to build Coopilot is being prepared for sharing through code refactoring and documentation updates.
+            <br/></br> The <a href="https://github.com/coop-blake/Coopilot" target="_blank">Coopilot Repository</a> provides some configuration and instructions for building the standalone packages to be used individually, or the entire remotely accessible Workspace.</span>
+            </div>
+            <div>
+
+
+</div>
+
+    <br/>    <br/>
+
 
         </div>
 
