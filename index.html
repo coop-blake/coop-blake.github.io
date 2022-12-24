@@ -3,19 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🛠 Coop-Blake's Demo Tools 🛠</title>
+    <title>🛠 Coop-Blake's Tools 🛠</title>
 </head>
 <body>
 <style>
     .ProjectInfoDiv{
         border: none;
         padding: 5px;
+        max-width: 600px;
+    }
+
+    #ExperimentalTools{
+        background-color: rgba(220, 122, 24, 0.87);
+        margin: 0px;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    #ExperimentalToolsHeader{
+        background-color: rgba(220, 60, 24, 0.87);
+        font-size: 14pt;
+        font-weight: bold;
+    }
+    .ToolTypeHeader{
+        font-size: 24pt;
+        font-weight: bold;
+    }
+
+    .ToolSummary{
+
+        padding-left: 15px;
+        font-size: 14pt;
+    }
+    .ToolDescription{
+        padding-left: 15px;
+        font-size: 12pt;
+
+    }
+
+    .CautionNote{
+        font-size: 12pt;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px;
+        border: solid black 2px;
+        background-color: rgba(220, 122, 24, 0.87);
+        margin: 10px;
+    }
+    .Note{
+        font-size: 12pt;
+        display: inline-block;
+        border-radius: 5px;
+        padding: 5px;
+        border: solid black 2px;
+        background-color: rgba(161, 120, 80, 0.58);
+        margin: 10px;
+        max-width: 600px;
+        padding-left: 20px;
+
+    }
+
+    .ToolLink{
+        font-size:18pt;
+        padding-left: 10px;
     }
 
     a {
         text-decoration: none;
         font-weight: bold;
         color: black;
+
     }
 
     a:link {
@@ -29,40 +85,84 @@
 
 
     a:hover {
-        color: #f33f99;
+        color: #280956;
     }
 
     /* selected link */
     a:active {
-        color: #f33f99;
+        color: #280956;
     }
 </style>
-<header><h1>🛠 Coop-Blake's Demo Tools 🛠</h1></header>
+<header><h1>🛠 Coop-Blake's Tools 🛠</h1></header>
+<hr style="margin: 0; color: black; border: 1px solid black; height: 0; box-shadow: 0 0 10px 1px black;">
+
 <div id="main" >
+
+    <div class="ProjectInfoDiv" >
+
+        <h3 class="ToolTypeHeader" >🔨 Data Tool</h3>
+        <a href="tabImporter" class="ToolLink">Tab Importer</a>            <br/>
+
+        <a href="tabImporter" ><img src="resources/tabImporterUnloaded.jpg"  style=" float: right;"></a>
+        <p class="ToolSummary">Get a comma seperated list from a column in a tab or comma seperated file</p>
+
+        <p class="ToolDescription"> Primarily used for getting a list of itemIDs from an exported catapult Worksheet. Though it could have other uses and has been working reliably for me for some time. Being developed for extended usage, including large file support.</p>
+        <span class="Note"> 📝 Not recommended for files with more than a thousand lines - maybe two or three, you can get away with 10 or more if you don't mind the unresponsiveness.</span>
+        <p style="font-weight: bold; padding-left: 15px">Try it <br/>
+        <ul>
+            <li> Drop Text File</li>
+            <li>Toggle Comma/Tab Button to choose data separator</li>
+            <li>Toggle AutoTrim to attempt removing header and footer rows</li>
+            <li>Adjust header and footer length with triangle buttons, reset with AutoTrim</li>
+            <li>Double Click Column Header to produce comma seperated list in lower pane</li>
+            <li>Triple Click comma seperated list to select</li>
+            <li>Copy to clipboard</li>
+        </ul>
+
+        </p>
+
+        <img src="resources/tabImporterLoaded.jpg" />
+    </div>
+
+
+    <br/>
+    <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
     <div class="ProjectInfoDiv">
-        <h3>🔧 UNFI Tools</h3>
-        <a href="UNFIPricer">UNFI Pricer</a>  <br/>
-        Lookup UNFI pricing by item id after dropping UNFI provided price book file.<br/><br/>
-        <a href="UNFIPricerWithInventory">UNFI Pricer with Inventory</a>  <br/>
-        Lookup UNFI pricing by item id and compare to inventory.<br/><br/>
-        <a href="UNFIPackChange">UNFI Pack Change with Inventory</a>  <br/>
-        View UNFI pack changes and compare to inventory.
+        <h3 class="ToolTypeHeader">🔧 UNFI Tools</h3>
+        <a href="UNFIPricer" class="ToolLink">UNFI Pricer</a>
+        <p class="ToolDescription"> Lookup UNFI pricing by item id after dropping UNFI provided price book file.</p>
+        <br/>
+        <a href="UNFIPricerWithInventory" class="ToolLink">UNFI Pricer with Inventory</a>
+        <p class="ToolDescription"> Lookup UNFI pricing by item id and compare to inventory.</p>
+
+<br/>
+        <a href="UNFIPackChange" class="ToolLink">UNFI Pack Change with Inventory</a>
+        <p class="ToolDescription"> View UNFI pack changes and compare to inventory.</p>
     </div>
     <br/>
-    <hr/>
-     <div class="ProjectInfoDiv" >
-         <h3>🔨 Data Tools</h3>
-         <a href="tabImporter">Tab Importer</a> <br/>
-         Get a comma seperated list from a column in a tab or comma seperated file <br/> <br/>
-         <a href="tabImporterDev">Tab Importer Under Development</a> <br/>
-         Should be able to handle very large files without making browser window unresponsive - under development
-     </div>
-    <br/>
-    <hr/>
-    <div class="ProjectInfoDiv" >
-        <h3>🖥 Workspace</h3>
-        <a href="https://github.com/coop-blake/Coopilot">Coopilot</a> <br/>
-        Web application workspace that can be installed locally or in the cloud.<br/> <br/>
+    <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
+
+    <h3 class="ToolTypeHeader" >🧪 Experimental </h3>
+    <div class="ProjectInfoDiv"  style="padding-top:0;maring-top: 0;">
+        <div id="ExperimentalTools">
+            <p id="ExperimentalToolsHeader"> &nbsp 👀 <span style="font-size: 12pt; float: right; margin: 5px;">   ⚠️   Use without expectation   ⚠️   </span> </p>
+            <br/>
+            <a href="tabImporterDev" class="ToolLink">Tab Importer For Large Files</a>
+            <p class="ToolDescription">Like the above <a href="tabImporter" >Tab Importer</a> but should be able to handle very large files without making browser window unresponsive </p>
+            <span class="CautionNote">  👀 Can be quirky but working </span>
+            <br/>
+            <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
+            <br/>
+
+            <a href="https://github.com/coop-blake/Coopilot" class="ToolLink">Coopilot</a>
+            <p class="ToolSummary">Web application workspace that can be installed locally or in the cloud</p>
+            <p class="ToolDescription">Contains the above tools and more in a remotely accessible password protected workspace.
+                The Workspace and the full stack javascript framework used to build it are still in an experimental development phase.
+                As such they are subject to many changes before community deployment is recommended. <br/> <br/> Currently, <a href="https://github.com/coop-blake/Coopilot">Coopilot</a> is being used to build the above standalone front ends. I also run a build on a cloud compute instance that is used regularly to interface with an iOS application under development</p>
+            <span class="CautionNote"> 👀 Not currently worth installing for use - only additional functionality compared to above tools is an interface for a proprietary iOS application. Documentation may lead you to a working web app if you are curious  ️</span>
+
+        </div>
+
     </div>
 </div>
 </body>
