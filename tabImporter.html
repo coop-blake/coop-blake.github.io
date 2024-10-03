@@ -109,61 +109,40 @@
             scroll-behavior: smooth;
         }
     </style>
-    <header>
-        <h1>🛠 Coop-Blake's Tools 🛠</h1>
-    </header>
-    <p class="MainInfo">Collection of tools used in POS tasks
-
-        <br /><br />
-        Listed by assumed descending usefulness.
-        <br /> <br />
-
-
-    </p>
-
+   
     <div id="main">
+       
         <div class="ProjectInfoDiv">
 
-            <a href="./DSN2Sheet/" class="ToolLink" target="_blank">Windows Command Line ODBC Utilities</a> <br />
+            <a href="tabImporter" class="ToolLink" target="_blank">Tab Importer</a> <br />
 
-            <p class="ToolSummary">A set of command line tools for querying an ODBC data source and exporting the
-                results to a Google Sheet or saving them in a local text file.</p>
+            <a href="tabImporter" target="_blank"><img src="resources/tabImporterUnloaded.jpg" style=" float: right;"
+                    target="_blank"></a>
+            <p class="ToolSummary">Trims and assembles a comma seperated list of column data from a tab or comma
+                delimited file</p>
 
-            <p class="ToolDescription">Used to move current inventory data for alternative access, checks and reporting
+            <p class="ToolDescription"> Primarily used in the wild for getting a list of identifiers from exported
+                worksheets which can then be used for search and filtering. <br /><br /> Currently <a
+                    href="experimental.html">being developed</a> for additional capabilities including larger file
+                support.</p>
+            <span class="Note"> 💁 Not recommended for files with more than about a thousand lines, maybe two or three.
+                You can get away with more if you don't mind the unresponsiveness. </span>
+            <p style="font-weight: bold; padding-left: 15px; font-size: 14pt;">Try it <br />
+            <ul>
+                <li>Open link </li>
+                <li>Drop text file</li>
+                <li>Toggle Comma/Tab button to choose data separator</li>
+                <li>Toggle AutoTrim to attempt removing header and footer rows</li>
+                <li>Adjust header and footer length with triangle buttons, reset with AutoTrim</li>
+                <li>Double Click column header number to produce comma seperated list in lower pane</li>
+            </ul>
+
             </p>
-
+            <img src="resources/tabImporterLoaded.jpg" alt="tabImporter Screenshot" />
         </div>
-        <div class="ProjectInfoDiv">
 
-            <a href="./tabImporter.html" class="ToolLink" target="_blank">Tab Importer</a> <br />
+        <a href="index.html" class="ToolLink">Back</a> <br />
 
-
-            <p class="ToolSummary">Single page web application for quickly creating comma separated lists from a column
-                of a tab or comma separated value text file.</p>
-
-            <p class="ToolDescription"> Used for getting a list of item identifiers from exported Catapult
-                worksheets, which can then be used for search and filtering.
-            </p>
-        </div>
-        <div class="ProjectInfoDiv">
-
-            <a href="./UNFI.html" class="ToolLink" target="_blank">UNFI Tools</a> <br />
-
-
-            <p class="ToolSummary">Single page web applications for searching, visualizing, and comparing UNFI received data with an Inventory Text File.</p>
-
-            <p class="ToolDescription"> The windows command line utilities can be used to produce an inventory file.
-            </p>
-        </div>
-        <div class="ProjectInfoDiv">
-
-            <a href="./experimental.html" class="ToolLink" target="_blank">Experimental</a> <br />
-
-
-            <p class="ToolSummary">Experimental developments</p>
-
-            
-        </div>
 
         <br />
 
