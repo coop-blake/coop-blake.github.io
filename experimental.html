@@ -1,164 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🛠 Coop-Blake's Tools 🛠</title>
 </head>
+
 <body>
-<style>
-    .ProjectInfoDiv{
-        border: none;
-        padding: 5px;
-        max-width: 600px;
-    }
+    <style>
+        .ProjectInfoDiv {
+            border: none;
+            padding: 5px;
+            max-width: 600px;
+        }
 
-    .MainInfo{
-        max-width: 600px;
-    }
+        .MainInfo {
+            max-width: 600px;
+        }
 
-    #ExperimentalTools{
-        background-color: rgba(220, 122, 24, 0.34);
-        margin: 0px;
-        padding: 0;
-        padding-bottom: 10px;
-    }
-    #ExperimentalToolsHeader{
-        background-color: rgba(220, 60, 24, 0.87);
-        font-size: 14pt;
-        font-weight: bold;
-    }
-    .ToolTypeHeader{
-        font-size: 24pt;
-        font-weight: bold;
-    }
+        #ExperimentalTools {
+            background-color: rgba(220, 122, 24, 0.34);
+            margin: 0px;
+            padding: 0;
+            padding-bottom: 10px;
+        }
 
-    .ToolSummary{
+        #ExperimentalToolsHeader {
+            background-color: rgba(220, 60, 24, 0.87);
+            font-size: 14pt;
+            font-weight: bold;
+        }
 
-        padding-left: 15px;
-        font-size: 14pt;
-    }
-    .ToolDescription{
-        padding-left: 15px;
-        font-size: 12pt;
+        .ToolTypeHeader {
+            font-size: 24pt;
+            font-weight: bold;
+        }
 
-    }
+        .ToolSummary {
 
-    .CautionNote{
-        font-size: 12pt;
-        display: inline-block;
-        border-radius: 5px;
-        padding: 5px;
-        border: solid black 2px;
-        background-color: rgba(220, 122, 24, 0.87);
-        margin: 10px;
-        font-style: italic;
-    }
-    .Note{
-        font-size: 12pt;
-        display: inline-block;
-        border-radius: 5px;
-        padding: 5px;
-        border: solid black 2px;
-        background-color: rgba(161, 120, 80, 0.58);
-        margin: 10px;
-        max-width: 600px;
-        padding-left: 20px;
-        font-style: italic;
+            padding-left: 15px;
+            font-size: 14pt;
+        }
 
-    }
+        .ToolDescription {
+            padding-left: 15px;
+            font-size: 12pt;
 
-    .ToolLink{
-        font-size:18pt;
-        padding-left: 10px;
-    }
+        }
 
-    a {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
+        .CautionNote {
+            font-size: 12pt;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 5px;
+            border: solid black 2px;
+            background-color: rgba(220, 122, 24, 0.87);
+            margin: 10px;
+            font-style: italic;
+        }
 
-    }
+        .Note {
+            font-size: 12pt;
+            display: inline-block;
+            border-radius: 5px;
+            padding: 5px;
+            border: solid black 2px;
+            background-color: rgba(161, 120, 80, 0.58);
+            margin: 10px;
+            max-width: 600px;
+            padding-left: 20px;
+            font-style: italic;
 
-    a:link {
-        color: #076707;
-    }
+        }
+
+        .ToolLink {
+            font-size: 18pt;
+            padding-left: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        a:link {
+            color: #076707;
+        }
 
 
-    a:visited {
-        color: #076707;
-    }
+        a:visited {
+            color: #076707;
+        }
 
 
-    a:hover {
-        color: #280956;
-    }
+        a:hover {
+            color: #280956;
+        }
 
-    /* selected link */
-    a:active {
-        color: #280956;
-    }
+        /* selected link */
+        a:active {
+            color: #280956;
+        }
 
-    html {
-        scroll-behavior: smooth;
-    }
-</style>
-<h3 class="ToolTypeHeader" >🧪 Experimental </h3>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <h3 class="ToolTypeHeader">🧪 Experimental </h3>
+    <a href="index.html" class="ToolLink">Back</a> <br />
 
-<div id="main" >
+    <div id="main">
 
-  
-    <div class="ProjectInfoDiv"  style="padding-top:0;maring-top: 0; max-width: 800px;">
-        <div id="ExperimentalTools">
-            <p id="ExperimentalToolsHeader" style=" padding: 5px;"> &nbsp 👀 <span style="font-size: 12pt; float: right; margin: 5px;">   ⚠️   Use without expectation   ⚠️   </span> </p>
-            <br/>
-            <a href="tabImporterDev" class="ToolLink">Tab Importer For Larger Files</a>
-            <a href="tabImporterDev" ><img src="resources/tabDevThumb.png"  style=" float: right;"></a>
-            <p class="ToolSummary">Like the above <a href="tabImporter" >Tab Importer</a> but should be able to handle very large files without making browser window unresponsive </p>
-            <span class="CautionNote">  👀 Can be quirky but works </span>
-            <br/>
-            <p class="ToolDescription">As development progresses, this will be used to import data objects that can be utilized by custom modules in the framework</p>
-            <br/>
-            <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
-            <br/>
-            <br/>
 
-            <a href="https://github.com/coop-blake/Coopilot" class="ToolLink">Coopilot</a>
-            <a href="https://github.com/coop-blake/Coopilot" ><img src="resources/coopilotThumb.png"  style=" float: right;"></a>
-            <p class="ToolSummary">Web application workspace that can be installed locally or in the cloud</p>
+        <div class="ProjectInfoDiv" style="padding-top:0;maring-top: 0; max-width: 800px;">
+            <div id="ExperimentalTools">
+                <p id="ExperimentalToolsHeader" style=" padding: 5px;"> &nbsp 👀 <span
+                        style="font-size: 12pt; float: right; margin: 5px;"> ⚠️ Use without expectation ⚠️ </span> </p>
+                <br />
+                <a href="tabImporterDev" class="ToolLink">Tab Importer For Larger Files</a>
+                <a href="tabImporterDev"><img src="resources/tabDevThumb.png" style=" float: right;"></a>
+                <p class="ToolSummary">Like the above <a href="tabImporter">Tab Importer</a> but should be able to
+                    handle very large files without making browser window unresponsive </p>
+                <span class="CautionNote"> 👀 Can be quirky but works </span>
+                <br />
+                <p class="ToolDescription">As development progresses, this will be used to import data objects that can
+                    be utilized by custom modules in the framework</p>
+                <br />
+                <hr style="margin: 10px; color: black; border: 0; height: 0; box-shadow: 0 0 10px 1px black;">
+                <br />
+                <br />
 
-            <p class="ToolDescription">Contains the above tools together in a remotely accessible password protected workspace.
-                The Workspace and the full stack javascript framework used to build it are in an experimental development phase.
-                As such they are subject to many changes before community deployment is recommended. <br/> <br/> Currently, <a href="https://github.com/coop-blake/Coopilot">Coopilot</a> is being used to build the above standalone front ends. It is also utilized in a cloud compute instance to interface with an iOS application being developed.</p>
+                <a href="https://github.com/coop-blake/Coopilot" class="ToolLink">Coopilot</a>
+                <a href="https://github.com/coop-blake/Coopilot"><img src="resources/coopilotThumb.png"
+                        style=" float: right;"></a>
+                <p class="ToolSummary">Web application workspace that can be installed locally or in the cloud</p>
 
-            <span class="CautionNote"> 👀 Not currently worth installing for use - only additional functionality compared to above tools is an interface for unavailable iOS application. Documentation may lead you to a working web app if you are curious.  ️</span>
+                <p class="ToolDescription">Contains the above tools together in a remotely accessible password protected
+                    workspace.
+                    The Workspace and the full stack javascript framework used to build it are in an experimental
+                    development phase.
+                    As such they are subject to many changes before community deployment is recommended. <br /> <br />
+                    Currently, <a href="https://github.com/coop-blake/Coopilot">Coopilot</a> is being used to build the
+                    above standalone front ends. It is also utilized in a cloud compute instance to interface with an
+                    iOS application being developed.</p>
 
-            <a href="resources/coopilotScanFull.jpg"  target="_blank"style="float: left; padding: 20px; "><img src="resources/coopilotScanThumb.png" style=" width: 200px;"/></a>
+                <span class="CautionNote"> 👀 Not currently worth installing for use - only additional functionality
+                    compared to above tools is an interface for unavailable iOS application. Documentation may lead you
+                    to a working web app if you are curious. ️</span>
 
-            <a href="resources/coopilotNoteFull.jpg" target="_blank" style=" padding: 20px;float: right; "><img src="resources/coopilotNoteThumb.png"  style=" width: 200px;"/></a>
-            <p style="font-weight: bold"> Click these images to see full resolution screenshots</p>
+                <a href="resources/coopilotScanFull.jpg" target="_blank" style="float: left; padding: 20px; "><img
+                        src="resources/coopilotScanThumb.png" style=" width: 200px;" /></a>
 
-            <p style=""> <-- Image on the left shows iOS app capturing a shelf tag through a closed glass door.</p>
-            <br/><br/><br/>
-            <p style="float: bottom"> Image on the right shows captured barcode and image text, along with a note to check update --></p>
-<br/><br/>
-            <p style="float: bottom"> Image below shows the web interface with the above tools and scan data together in remote workspace ↓</p>
-            <div style="text-align: center;"> <a href="resources/coopilotFull.jpg" target="_blank" ><img src="resources/coopilotMid.png" /></a>
+                <a href="resources/coopilotNoteFull.jpg" target="_blank" style=" padding: 20px;float: right; "><img
+                        src="resources/coopilotNoteThumb.png" style=" width: 200px;" /></a>
+                <p style="font-weight: bold"> Click these images to see full resolution screenshots</p>
 
-            <span class="Note" style="text-align: left" >💁 The Full Stack Javascript Framework used to build Coopilot is being prepared for sharing through code refactoring and documentation updates.
-            <br/></br> The <a href="https://github.com/coop-blake/Coopilot" target="_blank">Coopilot Repository</a> provides some configuration and instructions for building the standalone packages to be used individually, or the entire remotely accessible Workspace.</span>
+                <p style=""> <-- Image on the left shows iOS app capturing a shelf tag through a closed glass door.</p>
+                        <br /><br /><br />
+                        <p style="float: bottom"> Image on the right shows captured barcode and image text, along with a
+                            note to check update --></p>
+                        <br /><br />
+                        <p style="float: bottom"> Image below shows the web interface with the above tools and scan data
+                            together in remote workspace ↓</p>
+                        <div style="text-align: center;"> <a href="resources/coopilotFull.jpg" target="_blank"><img
+                                    src="resources/coopilotMid.png" /></a>
+
+                            <span class="Note" style="text-align: left">💁 The Full Stack Javascript Framework used to
+                                build Coopilot is being prepared for sharing through code refactoring and documentation
+                                updates.
+                                <br /></br> The <a href="https://github.com/coop-blake/Coopilot"
+                                    target="_blank">Coopilot Repository</a> provides some configuration and instructions
+                                for building the standalone packages to be used individually, or the entire remotely
+                                accessible Workspace.</span>
+                        </div>
+           
+
             </div>
-            <div>
-
-
-</div>
-
-    <br/>    <br/>
-
 
         </div>
+        <a href="index.html" class="ToolLink">Back</a> <br />
 
     </div>
-</div>
 </body>
+
 </html>
