@@ -110,19 +110,12 @@
         }
     </style>
     <header>
-        <h1>🛠 Coop-Blake's Tools 🛠</h1>
+        <h1>🔧 UNFI Tools</h1>
     </header>
-    <p class="MainInfo">Live demo collection of tools under development, built using an Open Source Full Stack
-        Javascript Frameworks and Tools.
-        <br /><br />
-        In the <a href="#ExperimentalTools">Experimental Section</a> there is more information and a link to the <a
-            href="https://github.com/coop-blake/Coopilot" target="_blank">Coopilot Repository</a> which contains the
-        code for these examples.
-        <br /><br />
-        Listed by assumed descending usefulness.
-        <br /> <br />
-
-
+    <p class="MainInfo">
+        Single Page Web Applications for dealing with UNFI shared data.
+        <br />
+        May Require an Inventory text file as well.
     </p>
     <hr style="margin: 0; color: black; border: 1px solid black; height: 0; box-shadow: 0 0 10px 1px black;">
 
@@ -130,43 +123,51 @@
 
         <div class="ProjectInfoDiv">
 
-            <h3 class="ToolTypeHeader">🔨 Data Tools</h3>
-            <a href="tabImporter" class="ToolLink" target="_blank">Tab Importer</a> <br />
-
-            <a href="tabImporter" target="_blank"><img src="resources/tabImporterUnloaded.jpg" style=" float: right;"
-                    target="_blank"></a>
-            <p class="ToolSummary">Trims and assembles a comma seperated list of column data from a tab or comma
-                delimited file</p>
-
-            <p class="ToolDescription"> Primarily used in the wild for getting a list of identifiers from exported
-                worksheets which can then be used for search and filtering. <br /><br /> Currently <a
-                    href="#ExperimentalTools">being developed</a> for additional capabilities including larger file
-                support.</p>
-            <span class="Note"> 💁 Not recommended for files with more than about a thousand lines, maybe two or three.
-                You can get away with more if you don't mind the unresponsiveness. </span>
-            <p style="font-weight: bold; padding-left: 15px; font-size: 14pt;">Try it <br />
-            <ul>
-                <li>Open link </li>
-                <li>Drop text file</li>
-                <li>Toggle Comma/Tab button to choose data separator</li>
-                <li>Toggle AutoTrim to attempt removing header and footer rows</li>
-                <li>Adjust header and footer length with triangle buttons, reset with AutoTrim</li>
-                <li>Double Click column header number to produce comma seperated list in lower pane</li>
-            </ul>
-
+<br>
+            <a href="UNFIPricer" class="ToolLink" target="_blank">UNFI Pricer</a>
+            <a href="UNFIPricer" target="_blank"><img src="resources/UNFIthumb.jpg"  style=" float: right;"></a>
+            <p class="ToolSummary">Lookup item pricing in pricebook file provided by UNFI.</p>
+    
+            <p class="ToolDescription">Drop UFNI pricebook text file. Then input item ID in the input field and press enter to lookup pricing
+            <br/><br/><br/><br/>
+                <a href="resources/UNFI.jpg" target="_blank">Enlarge Screenshot </a> </p>
+            <br/><br/>
+    <hr/>
+            <br/><br/>
+            <a href="UNFIPricerWithInventory" class="ToolLink" target="_blank">UNFI Pricer with Inventory</a>
+            <a href="UNFIPricerWithInventory" target="_blank" ><img src="resources/UNFIInvThumb.jpg"  style=" padding-left: 20px; float: right;"></a>
+            <p class="ToolSummary">Item Lookup for comparing pricebook and inventory data.</p>
+            <p class="ToolDescription">
+            <span class="Note" style="margin-right: 25px; margin: 5px; display: flex"> 💁 Requires UNFI pricebook and custom inventory tab delimited files to demo.</span>
             </p>
-            <img src="resources/tabImporterLoaded.jpg" alt="tabImporter Screenshot" />
+            <br/>
+             <div style="padding: 15px; display: inline-block; align-content: center; text-align: center">   <a href="resources/UNFIInv.jpg" target="_blank"  >Enlarge Screenshot </a> </div>
+    
+    
+    <br/>  <br/>
+            <hr/>
+            <br/><br/>
+            <a href="UNFIPackChange" class="ToolLink" target="_blank">UNFI Pack Change with Inventory</a>
+            <a href="UNFIPackChange" target="_blank"><img src="resources/packChangeThumb.jpg"  style=" padding-left: 20px; float: right;"></a>
+            <p class="ToolSummary">View upcoming UNFI pack changes and compare to inventory.</p>
+            <p class="ToolDescription">
+                <span class="Note" style="display: flex"> 💁 Requires UNFI packchange and custom inventory tab delimited files to demo.
+                </span>
+            </p>
+            <br/>
+    
+            <a href="resources/packChange.jpg" target="_blank" style="padding: 15px; display: inline-block">Enlarge Screenshot </a>
+    
+
         </div>
 
-        <a href="UNFI.html" class="ToolLink" target="_blank">UNFI Tools</a> <br /><br />
-        <a href="experimental.html" class="ToolLink" target="_blank">Experimental</a> <br />
+        <br /> <br />
 
-
-        <br />
 
     </div>
 
-
+    </div>
+    </div>
 </body>
 
 </html>
